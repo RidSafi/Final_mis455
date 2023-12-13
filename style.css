@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans&family=Manrope&family=Montserrat&family=Satisfy&display=swap');
+
+
+*{
+    margin: 5;
+    padding: 5;
+    box-sizing: border-box;
+    font-family:'Manrope', sans-serif;
+
+}
+body{
+    background-image: url(svgs/cloud2.jpg);
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.4s ease;
+}
+
+a:hover{
+    color: rgb(210, 6, 6);
+    font-size: larger;
+}
+
+
+ul{
+    margin: 0;
+
+}
+
+li{
+    list-style-type: none;
+   
+   
+    
+}
+
+
+.gradient-custom{
+    background: linear-gradient(to bottom, #94a2c5, #bdbdbd);
+}
+.gradient-custom:hover{
+    background:rgb(158, 185, 243) ;
+}
+
+nav{
+    min-height: 8vh;
+    background-color: #292e38;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(247, 247, 247);
+    flex-wrap: wrap;
+}
+
+ul{
+    font-size: large;
+}
+
+
+
+.content{
+    min-height: 80vh;
+    width: 80%;
+    
+}
+
+.gutter{
+    padding: 1rem;
+}
+
+.circled{
+    border-radius: 1rem;
+}
+
+.grid-box{
+    min-height: 30vh;
+}
+
+.flex-item{
+    width: 80%;
+    margin: auto;
+    opacity: 0.5;
+}
+.flex-item:hover{
+    opacity: 1;
+}
+
+.image-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image{
+    height: 15vh;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.image:hover{
+    transform: scale(1.2);
+}
+
+.text-muted-custom{
+    color: rgba(26, 26, 26, 0.836);
+}
+
+.form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    top:110px;
+
+}
+
+.mybutton{
+    border: none;
+    outline: none;
+    background-color: rgba(228, 222, 231, 0.678);
+    color: white;
+    transition: 0.4s ease;
+    width: 100%;
+    padding: 1rem 1rem;
+    
+    margin:auto;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.mybutton:hover{
+    background-color: rgb(50, 38, 50);
+}
+
+
+
+input{
+    
+    outline: none;
+    border: none;
+    border: 3px solid rgba(49, 72, 78, 0.678);
+    box-shadow: 0 0 1rem rgb(82, 82, 82);
+    border-radius:50px;
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    color: black;
+    
+}
+
+input:focus{
+    border: 3px solid rgba(76, 83, 129, 0.678);
+}
+
+label{
+    text-align: center;
+    font-size: x-large;
+}
+
+
+
+@media only screen and (max-width: 900px){
+
+    .content{
+        width: 95%;
+    }
+
+    .image-container{
+        display: none;
+    }
+
+    .mybutton{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+
+    .card-width{
+        width: 90%;
+    }
+
+    .content{
+        width: 95%;
+    }
+
+    .flex-item{
+        width: 95%;
+    }
+
+    .gutter{
+        padding: 0.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    .content{
+        width: 100%;
+    }
+
+    .gutter{
+        padding: 0.2rem;
+    }
+}
